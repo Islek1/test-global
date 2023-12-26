@@ -14,16 +14,5 @@ numeric_columns = data.select_dtypes(include=['number'])
 numeric_columns = data.select_dtypes(include=['int64', 'float64'])
 X = numeric_columns.drop(columns=['G3'])
 y = data['G3']
-model = LinearRegression()
-model.fit(X, y)
-pred = model.predict(X)
-print(pred)
-mae = mean_absolute_error(y, pred)
-mse = mean_squared_error(y, pred)
-rmse = np.sqrt(mse)
-r2 = r2_score(y, pred)
-print("MAE:", mae)
-print("MSE:", mse)
-print("RMSE:", rmse)
-print("R^2:", r2)
+
 
