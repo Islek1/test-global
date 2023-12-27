@@ -14,5 +14,5 @@ numeric_columns = data.select_dtypes(include=['number'])
 numeric_columns = data.select_dtypes(include=['int64', 'float64'])
 X = numeric_columns.drop(columns=['G3'])
 y = data['G3']
-
+g
 
